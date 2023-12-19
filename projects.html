@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Details</title>
+    <style>
+      p{font-family: Arial, Helvetica, sans-serif;}
+      ul, li{font-family: Arial, Helvetica, sans-serif;}
+      li{padding: 3px;}
+      #list li::before {
+    content:"👉";
+    margin-right: 20px;
+}
+#list li{list-style-type: none;}
+body {background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(242,238,255,1) 100%); padding: 10px; }
+
+    </style>
   </head>
   <body>
     <h1>Project Details</h1>
@@ -31,7 +43,7 @@
     </p>
     <hr />
     <h4>Roles and Responsibilities:</h4>
-    <ul>
+    <ul id="list">
       <li>Designed and implemented the user interface using HTML 5 and CSS</li>
       <li>Work closely with backend developers for code integration</li>
       <li>Identifying and troubleshooting issues with front end code</li>
@@ -43,6 +55,5 @@
       </li>
       <li>Involved in fixing technical issues</li>
     </ul>
-    <hr />
   </body>
 </html>
